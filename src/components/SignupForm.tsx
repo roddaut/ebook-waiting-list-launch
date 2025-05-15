@@ -1,11 +1,15 @@
 
 import React from 'react';
 
-const SignupForm: React.FC = () => {
+interface SignupFormProps {
+  isDarkBackground?: boolean;
+}
+
+const SignupForm: React.FC<SignupFormProps> = ({ isDarkBackground = false }) => {
   return (
     <div className="w-full max-w-md mx-auto">
       <div className="text-center mb-6">
-        <p className="text-lg md:text-xl text-gray-800 font-medium leading-relaxed">
+        <p className={`text-lg md:text-xl ${isDarkBackground ? 'text-white' : 'text-gray-800'} font-medium leading-relaxed`}>
           Learn how to earn from your writing from top writers. Just enter your email address below to get on the waiting list for the free ebook 'Profitable Playbooks for Writers.'
         </p>
       </div>

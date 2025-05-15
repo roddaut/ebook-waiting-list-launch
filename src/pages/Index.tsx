@@ -23,7 +23,7 @@ const Index = () => {
             <EbookCover />
             
             <div className="bg-white rounded-xl shadow-xl p-6 md:p-8">
-              <SignupForm />
+              <SignupForm isDarkBackground={false} />
             </div>
           </div>
         </div>
@@ -46,7 +46,7 @@ const Index = () => {
           </p>
           
           <div className="max-w-md mx-auto">
-            <SignupForm />
+            <SignupForm isDarkBackground={true} />
           </div>
         </div>
       </section>

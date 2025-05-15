@@ -37,20 +37,6 @@ const Index = () => {
         </div>
       </section>
       
-      {/* Testimonial Section */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4 max-w-4xl">
-          <h2 className="text-3xl font-bold text-center mb-12 text-black-ebook">From Struggling to Successful</h2>
-          
-          <div className="bg-yellow-ebook/10 p-6 md:p-8 rounded-lg border-l-4 border-yellow-ebook">
-            <p className="text-lg italic mb-4">
-              "Before discovering these strategies, I was giving away my writing for free. Now I've built a sustainable business that provides me with a full-time income from doing what I love."
-            </p>
-            <p className="font-bold">— Sarah J., Freelance Writer</p>
-          </div>
-        </div>
-      </section>
-      
       {/* Final CTA */}
       <section className="py-16 bg-black-ebook text-white">
         <div className="container mx-auto px-4 text-center">
@@ -68,7 +54,7 @@ const Index = () => {
       {/* Footer */}
       <footer className="py-6 bg-gray-100">
         <div className="container mx-auto px-4 text-center text-gray-600">
-          <p>© {new Date().getFullYear()} Profitable Playbooks for Writers. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Rodney Daut. All rights reserved.</p>
         </div>
       </footer>
     </div>

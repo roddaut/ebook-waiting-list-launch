@@ -1,12 +1,76 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import React from 'react';
+import EbookCover from '../components/EbookCover';
+import SignupForm from '../components/SignupForm';
+import Features from '../components/Features';
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen flex flex-col">
+      {/* Hero Section */}
+      <section className="hero-gradient py-12 md:py-20">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-8">
+            <h1 className="typewriter text-3xl md:text-5xl font-black tracking-tight text-black-ebook mb-4">
+              Turn Your Words Into Wealth
+            </h1>
+            <p className="text-xl text-gray-800 max-w-2xl mx-auto">
+              Discover practical strategies from successful writers who have built profitable writing businesses
+            </p>
+          </div>
+          
+          <div className="grid lg:grid-cols-2 gap-8 items-center">
+            <EbookCover />
+            
+            <div className="bg-white rounded-xl shadow-xl p-6 md:p-8">
+              <SignupForm />
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      {/* Features Section */}
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center mb-12 text-black-ebook">What You'll Learn</h2>
+          <Features />
+        </div>
+      </section>
+      
+      {/* Testimonial Section */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4 max-w-4xl">
+          <h2 className="text-3xl font-bold text-center mb-12 text-black-ebook">From Struggling to Successful</h2>
+          
+          <div className="bg-yellow-ebook/10 p-6 md:p-8 rounded-lg border-l-4 border-yellow-ebook">
+            <p className="text-lg italic mb-4">
+              "Before discovering these strategies, I was giving away my writing for free. Now I've built a sustainable business that provides me with a full-time income from doing what I love."
+            </p>
+            <p className="font-bold">— Sarah J., Freelance Writer</p>
+          </div>
+        </div>
+      </section>
+      
+      {/* Final CTA */}
+      <section className="py-16 bg-black-ebook text-white">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-3xl font-bold mb-4">Ready to Make Your Writing Profitable?</h2>
+          <p className="text-xl mb-8 max-w-2xl mx-auto">
+            Join our waiting list to be the first to receive the free "Profitable Playbooks for Writers" ebook
+          </p>
+          
+          <div className="max-w-md mx-auto">
+            <SignupForm />
+          </div>
+        </div>
+      </section>
+      
+      {/* Footer */}
+      <footer className="py-6 bg-gray-100">
+        <div className="container mx-auto px-4 text-center text-gray-600">
+          <p>© {new Date().getFullYear()} Profitable Playbooks for Writers. All rights reserved.</p>
+        </div>
+      </footer>
     </div>
   );
 };

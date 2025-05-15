@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,15 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				yellow: {
+					ebook: '#FCCC12',
+				},
+				black: {
+					ebook: '#1A1F2C',
+				},
+				blue: {
+					typewriter: '#50BEDB',
 				}
 			},
 			borderRadius: {
@@ -84,11 +94,17 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'type-cursor': {
+					'0%': { opacity: '1' },
+					'50%': { opacity: '0' },
+					'100%': { opacity: '1' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'type-cursor': 'type-cursor 1.2s infinite'
 			}
 		}
 	},

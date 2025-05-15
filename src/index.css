@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -97,5 +98,41 @@
 
   body {
     @apply bg-background text-foreground;
+  }
+  
+  /* Custom styles for the form */
+  .formkit-form {
+    @apply w-full max-w-md mx-auto bg-white rounded-lg shadow-lg p-6 !important;
+  }
+  
+  .formkit-fields {
+    @apply flex flex-col md:flex-row gap-2 !important;
+  }
+  
+  .formkit-field {
+    @apply flex-grow !important;
+  }
+  
+  .formkit-input {
+    @apply w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-black-ebook focus:border-transparent !important;
+  }
+  
+  .formkit-submit {
+    @apply bg-black-ebook hover:bg-black text-white font-bold py-3 px-6 rounded-md transition-colors !important;
+  }
+}
+
+/* Background gradient for the hero section */
+.hero-gradient {
+  background: linear-gradient(to bottom right, #FCCC12 60%, #FFFFFF);
+}
+
+@media (min-width: 640px) {
+  .typewriter {
+    overflow: hidden;
+    border-right: 3px solid #1A1F2C;
+    white-space: nowrap;
+    margin: 0 auto;
+    animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
   }
 }

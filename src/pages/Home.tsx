@@ -1,3 +1,4 @@
+
 import React from 'react';
 import EbookCover from '../components/EbookCover';
 import SignupForm from '../components/SignupForm';
@@ -93,11 +94,13 @@ const Home = () => {
             ))}
           </div>
           
-          {/* Second Sign-up Box (below bullets) */}
-          <div className="max-w-md mx-auto mt-12 bg-white p-6 rounded-lg shadow-md">
-            <h3 className="text-xl font-bold text-center mb-4">Get Your Free eBook</h3>
-            <SignupForm isDarkBackground={false} />
-            <p className="text-center text-sm text-gray-500 mt-3">We respect your email privacy. Unsubscribe anytime.</p>
+          {/* New soft blue background wrapper around the signup box */}
+          <div className="mt-12 py-12 px-4 rounded-lg" style={{ backgroundColor: "#e6f2ff" }}>
+            <div className="max-w-md mx-auto bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-xl font-bold text-center mb-4">Get Your Free eBook</h3>
+              <SignupForm isDarkBackground={false} />
+              <p className="text-center text-sm text-gray-500 mt-3">We respect your email privacy. Unsubscribe anytime.</p>
+            </div>
           </div>
         </div>
       </section>

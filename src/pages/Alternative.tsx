@@ -94,7 +94,7 @@ const Alternative = () => {
           <div className="max-w-3xl mx-auto space-y-4">
             {[
               "The visual design element that instantly tells readers your content is premium and worth paying for",
-              "The "invisible survey" technique that reveals exactly what your audience is willing to pay for",
+              "The \"invisible survey\" technique that reveals exactly what your audience is willing to pay for",
               "How creators with tiny audiences use high-ticket coaching to generate five-figure months",
               "Why focusing on community needs (not content perfection) is the secret to building loyal readers",
               "How building in public creates pre-sold customers before you launch anything"

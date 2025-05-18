@@ -59,7 +59,7 @@ const Alternative = () => {
               "Chris Stanley – How mini-books act as authority shortcuts that drive course sales and attract coaching clients.",
               "Jari Roomer – How short, outcome-specific mini courses convert better and create more loyal customers than mega-courses.",
               "Karen Cherry – The visual design element that instantly tells readers your content is premium and worth paying for.",
-              "Landon Poburan – The "invisible survey" technique that reveals exactly what your audience is willing to pay for.",
+              "Landon Poburan – The \"invisible survey\" technique that reveals exactly what your audience is willing to pay for.",
               "Leo Quinn – How sending a pizza box in the mail became his highest-performing outreach campaign.",
               "Russell Nohelty – Why Kickstarter is still the best-kept secret for funding and validating your writing projects.",
               "Sinem Günel – How creators with tiny audiences use high-ticket coaching to generate five-figure months.",
@@ -69,8 +69,8 @@ const Alternative = () => {
               "Ian Botes – The persuasive writing pattern that transforms skeptical readers into loyal customers.",
               "Claudia Faith – The simple mindset shift that helped her go from silent Substack to thriving writer in under 6 months.",
               "Josh Spector – The overlooked content source producing your best material—and how to turn it into evergreen assets.",
-              "Kristina God – How a smart "content flywheel" across 2–3 platforms multiplies your reach without more effort.",
-              "Michael Simmons – Why naming your ideas (like "1000 True Fans") makes them spread far beyond your audience.",
+              "Kristina God – How a smart \"content flywheel\" across 2–3 platforms multiplies your reach without more effort.",
+              "Michael Simmons – Why naming your ideas (like \"1000 True Fans\") makes them spread far beyond your audience.",
               "Robert Plank – The WWHW podcasting framework that creates binge-worthy content across platforms."
             ].map((item, index) => (
               <div key={index} className="flex items-start gap-2 mb-4">
@@ -91,7 +91,7 @@ const Alternative = () => {
               <div className="space-y-4">
                 <p className="text-lg font-medium flex items-center gap-2">
                   <span className="text-red-500 text-2xl">🚫</span>
-                  <span>No vague "just be consistent" advice</span>
+                  <span>No vague &quot;just be consistent&quot; advice</span>
                 </p>
                 <p className="text-lg font-medium flex items-center gap-2">
                   <span className="text-red-500 text-2xl">🚫</span>
@@ -109,7 +109,7 @@ const Alternative = () => {
                 </p>
                 <p className="text-lg font-medium flex items-center gap-2">
                   <CheckIcon className="h-5 w-5 text-green-500 flex-shrink-0" />
-                  <span>Learn what's working right now in 2025</span>
+                  <span>Learn what&apos;s working right now in 2025</span>
                 </p>
                 <p className="text-lg font-medium flex items-center gap-2">
                   <CheckIcon className="h-5 w-5 text-green-500 flex-shrink-0" />
@@ -124,7 +124,7 @@ const Alternative = () => {
       {/* Final CTA */}
       <section className="py-16 bg-black-ebook text-white">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-4">Download Profitable Playbooks Now – It's $0</h2>
+          <h2 className="text-3xl font-bold mb-4">Download Profitable Playbooks Now – It&apos;s $0</h2>
           <p className="text-xl mb-4 max-w-2xl mx-auto">
             Get the ebook 5,000+ creators wish they had when they started.
           </p>

@@ -1,7 +1,5 @@
 
 import React from 'react';
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
 
 interface SignupFormProps {
   isDarkBackground?: boolean;
@@ -10,6 +8,12 @@ interface SignupFormProps {
 const SignupForm: React.FC<SignupFormProps> = ({ isDarkBackground = false }) => {
   return (
     <div className="w-full max-w-md mx-auto">
+      <div className="text-center mb-6">
+        <p className={`text-lg md:text-xl ${isDarkBackground ? 'text-white' : 'text-gray-800'} font-medium leading-relaxed`}>
+          Learn how to earn from your writing from top writers. Just enter your email address below to get on the waiting list for the free ebook 'Profitable Playbooks for Writers.'
+        </p>
+      </div>
+      
       <form 
         action="https://app.kit.com/forms/7946937/subscriptions" 
         className="seva-form formkit-form" 
@@ -17,28 +21,58 @@ const SignupForm: React.FC<SignupFormProps> = ({ isDarkBackground = false }) => 
         data-sv-form="7946937" 
         data-uid="c8f30abd0d" 
         data-format="inline" 
-        data-version="5"
+        data-version="5" 
+        data-options="{&quot;settings&quot;:{&quot;after_subscribe&quot;:{&quot;action&quot;:&quot;message&quot;,&quot;success_message&quot;:&quot;Success! Now check your email to confirm your subscription.&quot;,&quot;redirect_url&quot;:&quot;&quot;},&quot;analytics&quot;:{&quot;google&quot;:null,&quot;fathom&quot;:null,&quot;facebook&quot;:null,&quot;segment&quot;:null,&quot;pinterest&quot;:null,&quot;sparkloop&quot;:null,&quot;googletagmanager&quot;:null},&quot;modal&quot;:{&quot;trigger&quot;:&quot;timer&quot;,&quot;scroll_percentage&quot;:null,&quot;timer&quot;:5,&quot;devices&quot;:&quot;all&quot;,&quot;show_once_every&quot;:15},&quot;powered_by&quot;:{&quot;show&quot;:true,&quot;url&quot;:&quot;https://kit.com/features/forms?utm_campaign=poweredby&amp;utm_content=form&amp;utm_medium=referral&amp;utm_source=dynamic&quot;},&quot;recaptcha&quot;:{&quot;enabled&quot;:false},&quot;return_visitor&quot;:{&quot;action&quot;:&quot;show&quot;,&quot;custom_content&quot;:&quot;&quot;},&quot;slide_in&quot;:{&quot;display_in&quot;:&quot;bottom_right&quot;,&quot;trigger&quot;:&quot;timer&quot;,&quot;scroll_percentage&quot;:null,&quot;timer&quot;:5,&quot;devices&quot;:&quot;all&quot;,&quot;show_once_every&quot;:15},&quot;sticky_bar&quot;:{&quot;display_in&quot;:&quot;top&quot;,&quot;trigger&quot;:&quot;timer&quot;,&quot;scroll_percentage&quot;:null,&quot;timer&quot;:5,&quot;devices&quot;:&quot;all&quot;,&quot;show_once_every&quot;:15}},&quot;version&quot;:&quot;5&quot;}" 
+        min-width="400 500 600 700 800"
       >
         <div data-style="clean">
           <ul className="formkit-alert formkit-alert-error" data-element="errors" data-group="alert"></ul>
-          <div data-element="fields" data-stacked="false" className="seva-fields formkit-fields flex flex-col gap-3">
+          <div data-element="fields" data-stacked="false" className="seva-fields formkit-fields">
             <div className="formkit-field">
-              <Input 
+              <input 
+                className="formkit-input" 
                 name="email_address" 
                 aria-label="Email Address" 
-                placeholder="Your email address" 
+                placeholder="Email Address" 
                 required 
-                type="email"
-                className={`w-full py-3 ${isDarkBackground ? "bg-white text-gray-800" : ""}`}
+                type="email" 
+                style={{ 
+                  color: "rgb(0, 0, 0)", 
+                  borderColor: "rgb(227, 227, 227)", 
+                  borderRadius: "4px", 
+                  fontWeight: 400 
+                }}
               />
             </div>
-            <Button 
+            <button 
               data-element="submit" 
-              type="submit"
-              className="w-full py-3 bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-bold"
+              className="formkit-submit formkit-submit" 
+              style={{ 
+                color: "rgb(255, 255, 255)", 
+                backgroundColor: "rgb(26, 31, 44)", 
+                borderRadius: "4px", 
+                fontWeight: 700 
+              }}
             >
-              GET YOUR FREE EBOOK
-            </Button>
+              <div className="formkit-spinner">
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <span className="">GET YOUR FREE EBOOK</span>
+            </button>
+          </div>
+          <div className="formkit-powered-by-convertkit-container">
+            <a 
+              href="https://kit.com/features/forms?utm_campaign=poweredby&amp;utm_content=form&amp;utm_medium=referral&amp;utm_source=dynamic" 
+              data-element="powered-by" 
+              className="formkit-powered-by-convertkit" 
+              data-variant="dark" 
+              target="_blank" 
+              rel="nofollow"
+            >
+              Built with Kit
+            </a>
           </div>
         </div>
       </form>

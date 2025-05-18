@@ -8,12 +8,6 @@ interface SignupFormProps {
 const SignupForm: React.FC<SignupFormProps> = ({ isDarkBackground = false }) => {
   return (
     <div className="w-full max-w-md mx-auto">
-      <div className="text-center mb-6">
-        <p className={`text-lg md:text-xl ${isDarkBackground ? 'text-white' : 'text-gray-800'} font-medium leading-relaxed`}>
-          Learn how to earn from your writing from top writers. Just enter your email address below to get on the waiting list for the free ebook 'Profitable Playbooks for Writers.'
-        </p>
-      </div>
-      
       <form 
         action="https://app.kit.com/forms/7946937/subscriptions" 
         className="seva-form formkit-form" 
@@ -59,7 +53,7 @@ const SignupForm: React.FC<SignupFormProps> = ({ isDarkBackground = false }) => 
                 <div></div>
                 <div></div>
               </div>
-              <span className="">GET YOUR FREE EBOOK</span>
+              <span className="">Get Instant Access</span>
             </button>
           </div>
           <div className="formkit-powered-by-convertkit-container">

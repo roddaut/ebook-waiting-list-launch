@@ -121,9 +121,9 @@
   }
 }
 
-/* Background gradient for the hero section */
+/* Background for the hero section */
 .hero-gradient {
-  background: linear-gradient(to bottom right, #f5f7fa 60%, #FFFFFF);
+  background-color: #f3f3f3;
 }
 
 @media (min-width: 640px) {

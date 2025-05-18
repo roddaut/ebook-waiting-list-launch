@@ -1,3 +1,4 @@
+
 import React from 'react';
 import EbookCover from '../components/EbookCover';
 import SignupForm from '../components/SignupForm';
@@ -18,7 +19,16 @@ const Alternative = () => {
             </p>
           </div>
           
-          <div className="grid lg:grid-cols-2 gap-8 items-center">
+          {/* Three-column layout */}
+          <div className="grid md:grid-cols-3 gap-8 items-start">
+            {/* Left column: Book cover */}
+            <div className="flex justify-center">
+              <div className="w-full max-w-[250px]">
+                <EbookCover />
+              </div>
+            </div>
+            
+            {/* Middle column: Main text */}
             <div>
               <p className="text-lg text-gray-800 mb-4">
                 You're tired of posting into the void.
@@ -37,7 +47,12 @@ const Alternative = () => {
               </p>
             </div>
             
-            <EbookCover />
+            {/* Right column: Sign-up box */}
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-xl font-bold text-center mb-4">Get Your Free eBook</h3>
+              <SignupForm isDarkBackground={false} />
+              <p className="text-center text-sm text-gray-500 mt-3">We respect your email privacy. Unsubscribe anytime.</p>
+            </div>
           </div>
         </div>
       </section>
@@ -77,6 +92,13 @@ const Alternative = () => {
                 <p className="text-gray-700">{item}</p>
               </div>
             ))}
+          </div>
+          
+          {/* Second Sign-up Box (below bullets) */}
+          <div className="max-w-md mx-auto mt-12 bg-white p-6 rounded-lg shadow-md">
+            <h3 className="text-xl font-bold text-center mb-4">Get Your Free eBook</h3>
+            <SignupForm isDarkBackground={false} />
+            <p className="text-center text-sm text-gray-500 mt-3">We respect your email privacy. Unsubscribe anytime.</p>
           </div>
         </div>
       </section>

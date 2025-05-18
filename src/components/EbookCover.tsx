@@ -11,9 +11,9 @@ const EbookCover: React.FC = () => {
   const fallbackImage = "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b";
   
   return (
-    <div className="flex justify-center mb-8 lg:mb-0">
-      <div className="relative w-64 md:w-80 lg:w-96">
-        <div className="absolute inset-0 rounded-lg transform rotate-3 shadow-xl"></div>
+    <div className="flex justify-center">
+      <div className="relative w-56 md:w-64">
+        <div className="absolute inset-0 rounded-lg transform rotate-3 bg-gray-300 shadow-xl"></div>
         <div className="relative bg-transparent rounded-lg shadow-2xl overflow-hidden">
           <img 
             src={imageError ? fallbackImage : mainImage} 

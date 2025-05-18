@@ -1,10 +1,9 @@
-
 import React from 'react';
 import EbookCover from '../components/EbookCover';
 import SignupForm from '../components/SignupForm';
 import { CheckIcon } from "lucide-react";
 
-const Alternative = () => {
+const Home = () => {
   return (
     <div className="min-h-screen flex flex-col">
       {/* Hero Section */}
@@ -167,4 +166,4 @@ const Alternative = () => {
   );
 };
 
-export default Alternative;
+export default Home;

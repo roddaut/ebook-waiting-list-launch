@@ -4,7 +4,7 @@ import EbookCover from '../components/EbookCover';
 import SignupForm from '../components/SignupForm';
 import Features from '../components/Features';
 
-const Index = () => {
+const WaitingList = () => {
   return (
     <div className="min-h-screen flex flex-col">
       {/* Hero Section */}
@@ -61,4 +61,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default WaitingList;

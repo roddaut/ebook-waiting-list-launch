@@ -1,4 +1,3 @@
-
 import React from 'react';
 import EbookCover from '../components/EbookCover';
 import SignupForm from '../components/SignupForm';
@@ -11,7 +10,7 @@ const Alternative = () => {
       <section className="hero-gradient py-12 md:py-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-8">
-            <h1 className="typewriter text-3xl md:text-5xl font-black tracking-tight text-black-ebook mb-4">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-black tracking-tight text-black-ebook mb-4 mx-auto max-w-5xl">
               Why most online entrepreneurs struggle—and what these 20 did differently
             </h1>
             <p className="text-xl text-gray-800 max-w-2xl mx-auto">

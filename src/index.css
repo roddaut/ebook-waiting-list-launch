@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -123,7 +124,7 @@
 
 /* Background for the hero section */
 .hero-gradient {
-  background-color: #f3f3f3;
+  background-color: #e6f2ff;
 }
 
 @media (min-width: 640px) {

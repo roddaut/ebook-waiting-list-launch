@@ -19,10 +19,10 @@ const Confirmation = () => {
           
           {/* Confirmation message */}
           <div className="space-y-4 text-left">
-            <p className="text-lg font-medium">Hi, you.</p>
+            <p className="text-lg font-medium">Hi,</p>
             
             <p className="text-md">
-              Thank you so much for deciding to get my ebook <span className="font-semibold">Profitable Playbooks for Writers</span>.
+              Thank you so much for deciding to get my ebook <span className="font-semibold">Profitable Playbooks</span>.
             </p>
             
             <p className="text-md">
@@ -38,15 +38,15 @@ const Confirmation = () => {
             </p>
             
             <p className="text-md">
-              You'll get an email in a few seconds asking you to confirm your interest in Profitable Playbooks for Writers.
+              You'll get an email in a few seconds asking you to confirm your interest in <span className="font-semibold">Profitable Playbooks</span>.
             </p>
             
             <p className="text-md">
-              I know it's a pain but I promise it'll be worth it.
+              I know it's an extra step but I promise it'll be worth it.
             </p>
             
             <p className="text-md">
-              So ,check your email now and click the confirm button. I'll then send you your book right away.
+              So, check your email now and click the confirm button. I'll then send you your book right away.
             </p>
 
             <p className="text-md">
@@ -56,7 +56,7 @@ const Confirmation = () => {
               Rodney
             </p>
              <p className="text-md">
-              Creator of Profitable Playbooks
+              Creator of <span className="font-semibold">Profitable Playbooks</span>
             </p>
             
             <div className="pt-6">

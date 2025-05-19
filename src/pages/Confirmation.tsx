@@ -1,8 +1,6 @@
 
 import React from 'react';
-import { Button } from "@/components/ui/button";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
-import { Link } from "react-router-dom";
 
 const Confirmation = () => {
   return (
@@ -55,15 +53,14 @@ const Confirmation = () => {
             <p className="text-md">
               Rodney
             </p>
-             <p className="text-md">
+            <p className="text-md">
               Creator of <span className="font-semibold">Profitable Playbooks</span>
             </p>
             
-            <div className="pt-6">
-              <Button asChild className="bg-black-ebook hover:bg-gray-800">
-                <Link to="/">Return to Home</Link>
-              </Button>
-            </div>
+            {/* PS message */}
+            <p className="text-md pt-4 italic">
+              PS: If you don't get the email for some reason, check your Promotions folder (if using Gmail) or Spam. Or email me at rodney@selfinfluence.net and I'll get you all set up.
+            </p>
           </div>
         </div>
       </div>

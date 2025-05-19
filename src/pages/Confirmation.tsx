@@ -46,7 +46,17 @@ const Confirmation = () => {
             </p>
             
             <p className="text-md">
-              So check your email now and click the confirm button. That way you'll be first in line to get the free ebook and learn all those juicy strategies for growing your business.
+              So ,check your email now and click the confirm button. I'll then send you your book right away.
+            </p>
+
+            <p className="text-md">
+              Thanks in advance,
+            </p>
+            <p className="text-md">
+              Rodney
+            </p>
+             <p className="text-md">
+              Creator of Profitable Playbooks
             </p>
             
             <div className="pt-6">

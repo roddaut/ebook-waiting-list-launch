@@ -1,0 +1,64 @@
+
+import React from 'react';
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
+import EbookCover from "@/components/EbookCover";
+
+const Download = () => {
+  return (
+    <div className="min-h-screen bg-white py-12">
+      <div className="max-w-md mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center">
+          {/* Avatar with Rodney's photo */}
+          <div className="flex justify-center mb-6">
+            <Avatar className="h-32 w-32 border-4 border-white shadow-lg">
+              <AvatarImage src="/lovable-uploads/e027d78c-6c7e-44e0-a6db-e81c35d9ef13.png" alt="Rodney Daut" />
+              <AvatarFallback>RD</AvatarFallback>
+            </Avatar>
+          </div>
+          
+          <h1 className="text-2xl font-bold mb-6">Here's your ebook</h1>
+          
+          {/* Ebook cover */}
+          <div className="mb-6">
+            <EbookCover />
+          </div>
+          
+          {/* Download message */}
+          <div className="space-y-4 text-left">
+            <p className="text-md">
+              You're just seconds away from discovering over 20 ways to grow your business using the power of the written word.
+            </p>
+            
+            <p className="text-md">
+              Every strategy is used by successful entrepreneurs and is working in today's online world.
+            </p>
+            
+            <p className="text-md">
+              You can start using them right away to grow your business.
+            </p>
+            
+            <p className="text-md">
+              After you've tried a few, please send me a note to let me know how you are doing at <a href="mailto:rodney@selfinfluence.net" className="text-blue-600 hover:underline">rodney@selfinfluence.net</a>. I respond to every email.
+            </p>
+            
+            <p className="text-md pt-4">
+              With gratitude,
+            </p>
+            <p className="text-md">
+              Rodney Daut
+            </p>
+            
+            {/* Download button */}
+            <div className="pt-6">
+              <a href="/lovable-uploads/9b95a38d-589a-4889-b8da-826763863732.png" download="Profitable_Playbooks.pdf" className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-300">
+                Download Ebook
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Download;

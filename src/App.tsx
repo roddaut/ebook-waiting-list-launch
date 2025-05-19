@@ -8,6 +8,7 @@ import Home from "./pages/Home";
 import WaitingList from "./pages/WaitingList";
 import NotFound from "./pages/NotFound";
 import Confirmation from "./pages/Confirmation";
+import Download from "./pages/Download";
 import GoogleAnalytics from "./components/GoogleAnalytics";
 
 const queryClient = new QueryClient();
@@ -23,6 +24,7 @@ const App = () => (
           <Route path="/" element={<Home />} />
           <Route path="/waiting-list" element={<WaitingList />} />
           <Route path="/confirmation" element={<Confirmation />} />
+          <Route path="/download" element={<Download />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

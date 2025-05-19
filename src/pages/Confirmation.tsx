@@ -59,7 +59,7 @@ const Confirmation = () => {
             
             {/* PS message */}
             <p className="text-md pt-4 italic">
-              PS: If you don't get the email for some reason, check your Promotions folder (if using Gmail) or Spam. Or email me at <a href="mailto:rodney@selfinfluence.net" className="text-blue-600 hover:underline">rodney@selfinfluence.net</a> and I'll get you all set up.
+              PS: If you don't get the email for some reason, check your Promotions folder (if using Gmail) or check your Spam folder. Or email me at <a href="mailto:rodney@selfinfluence.net" className="text-blue-600 hover:underline">rodney@selfinfluence.net</a> and I'll get you all set up.
             </p>
           </div>
         </div>

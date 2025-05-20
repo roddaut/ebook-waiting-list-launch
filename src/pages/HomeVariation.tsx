@@ -1,4 +1,3 @@
-
 import React from 'react';
 import EbookCover from '../components/EbookCover';
 import SignupForm from '../components/SignupForm';
@@ -8,7 +7,7 @@ import { Link } from 'react-router-dom';
 const HomeVariation = () => {
   return (
     <div className="min-h-screen flex flex-col">
-      {/* Hero Section with modified layout */}
+      {/* Hero Section */}
       <section className="hero-gradient py-12 md:py-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-8">
@@ -20,9 +19,9 @@ const HomeVariation = () => {
             </p>
           </div>
           
-          {/* Two-column layout: Text+Signup on left, Book on right */}
+          {/* Two-column layout */}
           <div className="grid md:grid-cols-2 gap-8 items-start">
-            {/* Left column: Main text and signup form */}
+            {/* Left column: Book cover and main text */}
             <div>
               <p className="text-lg text-gray-800 mb-4">
                 You're tired of posting into the void.
@@ -41,9 +40,10 @@ const HomeVariation = () => {
               </p>
               
               {/* Small links to toggle between versions */}
-              <div className="mb-8 text-sm text-gray-500 flex gap-4">
+              <div className="mt-8 text-center text-sm text-gray-500">
                 <Link to="/" className="hover:underline">View original layout</Link>
-                <Link to="/home-v3" className="hover:underline">Try variation 3 layout</Link>
+                <Link to="/home-v3" className="hover:underline ml-4">Try variation 3 layout</Link>
+                <Link to="/home-v4" className="hover:underline ml-4">Try variation 4 layout</Link>
               </div>
 
               {/* Sign-up box moved to left column, below text */}
@@ -54,7 +54,7 @@ const HomeVariation = () => {
               </div>
             </div>
             
-            {/* Right column: Book cover only */}
+            {/* Right column: Sign-up box */}
             <div className="flex justify-center items-center">
               <div className="w-full max-w-[380px]">
                 <EbookCover />

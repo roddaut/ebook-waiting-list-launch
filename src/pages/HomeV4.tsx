@@ -5,10 +5,10 @@ import SignupForm from '../components/SignupForm';
 import { CheckIcon } from "lucide-react";
 import { Link } from 'react-router-dom';
 
-const Home = () => {
+const HomeV4 = () => {
   return (
     <div className="min-h-screen flex flex-col">
-      {/* Hero Section */}
+      {/* Hero Section with modified layout */}
       <section className="hero-gradient py-12 md:py-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-8">
@@ -20,16 +20,9 @@ const Home = () => {
             </p>
           </div>
           
-          {/* Three-column layout */}
-          <div className="grid md:grid-cols-3 gap-8 items-start">
-            {/* Left column: Book cover */}
-            <div className="flex justify-center">
-              <div className="w-full max-w-[250px]">
-                <EbookCover />
-              </div>
-            </div>
-            
-            {/* Middle column: Main text */}
+          {/* Two-column layout: Text on left, Book+Signup on right */}
+          <div className="grid md:grid-cols-2 gap-8 items-start">
+            {/* Left column: Main text content */}
             <div>
               <p className="text-lg text-gray-800 mb-4">
                 You're tired of posting into the void.
@@ -47,19 +40,25 @@ const Home = () => {
                 You'll discover the exact systems, workflows, and mindset shifts that helped them grow newsletters, launch products, sell courses, land high-ticket clients, and build communities from scratch.
               </p>
               
-              {/* Small links to toggle between versions */}
-              <div className="mt-8 text-sm text-gray-500 flex flex-col space-y-2">
-                <Link to="/home-v2" className="hover:underline">Try alternate layout</Link>
-                <Link to="/home-v3" className="hover:underline">Try alternate layout 2</Link>
-                <Link to="/home-v4" className="hover:underline">Try alternate layout 3</Link>
+              {/* Small link to toggle between versions */}
+              <div className="mb-8 text-sm text-gray-500">
+                <Link to="/" className="hover:underline">View original layout</Link>
               </div>
             </div>
             
-            {/* Right column: Sign-up box */}
-            <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-bold text-center mb-4">Get Your Free eBook</h3>
-              <SignupForm isDarkBackground={false} />
-              <p className="text-center text-sm text-gray-500 mt-3">We respect your email privacy. Unsubscribe anytime.</p>
+            {/* Right column: Book cover to the left of signup box */}
+            <div className="flex flex-col md:flex-row gap-8 items-center md:items-start">
+              {/* Book cover on the left */}
+              <div className="w-full md:w-auto max-w-[250px]">
+                <EbookCover />
+              </div>
+              
+              {/* Sign-up box on the right */}
+              <div className="bg-white p-6 rounded-lg shadow-md w-full max-w-[300px]">
+                <h3 className="text-xl font-bold text-center mb-4">Get Your Free eBook</h3>
+                <SignupForm isDarkBackground={false} />
+                <p className="text-center text-sm text-gray-500 mt-3">We respect your email privacy. Unsubscribe anytime.</p>
+              </div>
             </div>
           </div>
         </div>
@@ -179,4 +178,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default HomeV4;

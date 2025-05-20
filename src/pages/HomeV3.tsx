@@ -43,6 +43,7 @@ const HomeV3 = () => {
               {/* Small link to toggle between versions */}
               <div className="mb-8 text-sm text-gray-500">
                 <Link to="/" className="hover:underline">View original layout</Link>
+                <Link to="/home-v4" className="hover:underline ml-4">Try variation 4 layout</Link>
               </div>
             </div>
             

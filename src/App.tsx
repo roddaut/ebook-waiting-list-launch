@@ -5,6 +5,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
+import HomeVariation from "./pages/HomeVariation";
 import WaitingList from "./pages/WaitingList";
 import NotFound from "./pages/NotFound";
 import Confirmation from "./pages/Confirmation";
@@ -22,6 +23,7 @@ const App = () => (
         <GoogleAnalytics />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/home-v2" element={<HomeVariation />} />
           <Route path="/waiting-list" element={<WaitingList />} />
           <Route path="/confirmation" element={<Confirmation />} />
           <Route path="/download" element={<Download />} />

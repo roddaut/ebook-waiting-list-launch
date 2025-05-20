@@ -21,7 +21,7 @@ const SignupForm: React.FC<SignupFormProps> = ({ isDarkBackground = false }) => 
       >
         <div data-style="clean">
           <ul className="formkit-alert formkit-alert-error" data-element="errors" data-group="alert"></ul>
-          <div data-element="fields" data-stacked="true" className="seva-fields formkit-fields flex flex-col gap-3">
+          <div data-element="fields" data-stacked="false" className="seva-fields formkit-fields">
             <div className="formkit-field">
               <input 
                 className="formkit-input" 
@@ -42,7 +42,7 @@ const SignupForm: React.FC<SignupFormProps> = ({ isDarkBackground = false }) => 
             </div>
             <button 
               data-element="submit" 
-              className="formkit-submit formkit-submit w-full" 
+              className="formkit-submit formkit-submit" 
               style={{ 
                 color: "rgb(255, 255, 255)", 
                 backgroundColor: "rgb(26, 31, 44)", 

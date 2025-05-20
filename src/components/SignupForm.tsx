@@ -7,7 +7,7 @@ interface SignupFormProps {
 
 const SignupForm: React.FC<SignupFormProps> = ({ isDarkBackground = false }) => {
   return (
-    <div className="w-full max-w-md mx-auto">
+    <div className="w-full">
       <form 
         action="https://app.kit.com/forms/7946937/subscriptions" 
         className="seva-form formkit-form" 
@@ -24,7 +24,7 @@ const SignupForm: React.FC<SignupFormProps> = ({ isDarkBackground = false }) => 
           <div data-element="fields" data-stacked="false" className="seva-fields formkit-fields">
             <div className="formkit-field">
               <input 
-                className="formkit-input" 
+                className="formkit-input w-full" 
                 name="email_address" 
                 aria-label="Email Address" 
                 placeholder="Email Address" 
@@ -40,7 +40,7 @@ const SignupForm: React.FC<SignupFormProps> = ({ isDarkBackground = false }) => 
             </div>
             <button 
               data-element="submit" 
-              className="formkit-submit formkit-submit" 
+              className="formkit-submit formkit-submit w-full" 
               style={{ 
                 color: "rgb(255, 255, 255)", 
                 backgroundColor: "rgb(26, 31, 44)", 

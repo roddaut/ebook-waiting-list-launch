@@ -1,4 +1,3 @@
-
 import React from 'react';
 import EbookCover from '../components/EbookCover';
 import SignupForm from '../components/SignupForm';
@@ -46,17 +45,15 @@ const HomeVariation = () => {
               </div>
             </div>
             
-            {/* Right column: Book cover + Sign-up box */}
-            <div className="flex flex-col space-y-8">
-              {/* Book cover at the top */}
-              <div className="flex justify-center">
-                <div className="w-full max-w-[250px]">
-                  <EbookCover />
-                </div>
+            {/* Right column: Book cover + Sign-up box with consistent width */}
+            <div className="flex flex-col space-y-8 items-center">
+              {/* Book cover at the top with defined width */}
+              <div className="w-full max-w-[250px]">
+                <EbookCover />
               </div>
               
-              {/* Sign-up box below the book */}
-              <div className="bg-white p-6 rounded-lg shadow-md">
+              {/* Sign-up box below the book with matching width */}
+              <div className="bg-white p-6 rounded-lg shadow-md w-full max-w-[250px]">
                 <h3 className="text-xl font-bold text-center mb-4">Get Your Free eBook</h3>
                 <SignupForm isDarkBackground={false} />
                 <p className="text-center text-sm text-gray-500 mt-3">We respect your email privacy. Unsubscribe anytime.</p>

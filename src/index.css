@@ -105,8 +105,14 @@
     @apply w-full max-w-md mx-auto bg-white rounded-lg shadow-lg p-6 !important;
   }
   
-  .formkit-fields {
+  /* Modify this to respect the data-stacked attribute */
+  .formkit-fields[data-stacked="false"] {
     @apply flex flex-col md:flex-row gap-2 !important;
+  }
+  
+  /* Add specific style for stacked layout */
+  .formkit-fields[data-stacked="true"] {
+    @apply flex flex-col gap-3 !important;
   }
   
   .formkit-field {
@@ -119,6 +125,11 @@
   
   .formkit-submit {
     @apply bg-black-ebook hover:bg-gray-800 text-white font-bold py-3 px-6 rounded-md transition-colors !important;
+  }
+  
+  /* Add specific style for full width button in vertical layout */
+  .formkit-fields[data-stacked="true"] .formkit-submit {
+    @apply w-full !important;
   }
 }
 

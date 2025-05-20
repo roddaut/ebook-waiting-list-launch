@@ -1,4 +1,3 @@
-
 import React from 'react';
 import EbookCover from '../components/EbookCover';
 import SignupForm from '../components/SignupForm';
@@ -53,10 +52,10 @@ const HomeV4 = () => {
                 <EbookCover />
               </div>
               
-              {/* Sign-up box on the right */}
+              {/* Sign-up box on the right - THIS IS THE FIRST SIGNUP FORM WHERE WE APPLY VERTICAL LAYOUT */}
               <div className="bg-white p-6 rounded-lg shadow-md w-full max-w-[300px]">
                 <h3 className="text-xl font-bold text-center mb-4">Get Your Free eBook</h3>
-                <SignupForm isDarkBackground={false} />
+                <SignupForm isDarkBackground={false} verticalLayout={true} />
                 <p className="text-center text-sm text-gray-500 mt-3">We respect your email privacy. Unsubscribe anytime.</p>
               </div>
             </div>
@@ -103,7 +102,7 @@ const HomeV4 = () => {
         </div>
       </section>
       
-      {/* Standalone Sign-up Section */}
+      {/* Standalone Sign-up Section - KEEP HORIZONTAL LAYOUT */}
       <section className="py-16" style={{ backgroundColor: "#e6f2ff" }}>
         <div className="container mx-auto px-4">
           <div className="max-w-md mx-auto bg-white p-6 rounded-lg shadow-md">
@@ -153,7 +152,7 @@ const HomeV4 = () => {
         </div>
       </section>
       
-      {/* Final CTA */}
+      {/* Final CTA - KEEP HORIZONTAL LAYOUT */}
       <section className="py-16 bg-black-ebook text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-4">Download Profitable Playbooks Now – It&apos;s $0</h2>

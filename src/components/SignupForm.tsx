@@ -3,9 +3,13 @@ import React from 'react';
 
 interface SignupFormProps {
   isDarkBackground?: boolean;
+  verticalLayout?: boolean;
 }
 
-const SignupForm: React.FC<SignupFormProps> = ({ isDarkBackground = false }) => {
+const SignupForm: React.FC<SignupFormProps> = ({ 
+  isDarkBackground = false,
+  verticalLayout = false
+}) => {
   return (
     <div className="w-full mx-auto">
       <form 
@@ -21,7 +25,11 @@ const SignupForm: React.FC<SignupFormProps> = ({ isDarkBackground = false }) => 
       >
         <div data-style="clean">
           <ul className="formkit-alert formkit-alert-error" data-element="errors" data-group="alert"></ul>
-          <div data-element="fields" data-stacked="false" className="seva-fields formkit-fields">
+          <div 
+            data-element="fields" 
+            data-stacked={verticalLayout ? "true" : "false"} 
+            className={`seva-fields formkit-fields ${verticalLayout ? 'flex flex-col gap-3' : ''}`}
+          >
             <div className="formkit-field">
               <input 
                 className="formkit-input" 
@@ -42,7 +50,7 @@ const SignupForm: React.FC<SignupFormProps> = ({ isDarkBackground = false }) => 
             </div>
             <button 
               data-element="submit" 
-              className="formkit-submit formkit-submit" 
+              className={`formkit-submit formkit-submit ${verticalLayout ? 'w-full' : ''}`}
               style={{ 
                 color: "rgb(255, 255, 255)", 
                 backgroundColor: "rgb(26, 31, 44)", 

@@ -1,3 +1,4 @@
+
 import React from 'react';
 import EbookCover from '../components/EbookCover';
 import SignupForm from '../components/SignupForm';
@@ -39,9 +40,10 @@ const HomeVariation = () => {
                 You'll discover the exact systems, workflows, and mindset shifts that helped them grow newsletters, launch products, sell courses, land high-ticket clients, and build communities from scratch.
               </p>
               
-              {/* Small link to toggle between versions */}
-              <div className="mb-8 text-sm text-gray-500">
+              {/* Small links to toggle between versions */}
+              <div className="mb-8 text-sm text-gray-500 flex gap-4">
                 <Link to="/" className="hover:underline">View original layout</Link>
+                <Link to="/home-v3" className="hover:underline">Try variation 3 layout</Link>
               </div>
 
               {/* Sign-up box moved to left column, below text */}

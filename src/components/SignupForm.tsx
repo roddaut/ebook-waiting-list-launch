@@ -7,7 +7,7 @@ interface SignupFormProps {
 
 const SignupForm: React.FC<SignupFormProps> = ({ isDarkBackground = false }) => {
   return (
-    <div className="w-full max-w-md mx-auto">
+    <div className="w-full mx-auto">
       <form 
         action="https://app.kit.com/forms/7946937/subscriptions" 
         className="seva-form formkit-form" 
@@ -34,7 +34,9 @@ const SignupForm: React.FC<SignupFormProps> = ({ isDarkBackground = false }) => 
                   color: "rgb(0, 0, 0)", 
                   borderColor: "rgb(227, 227, 227)", 
                   borderRadius: "4px", 
-                  fontWeight: 400 
+                  fontWeight: 400,
+                  width: "100%",
+                  padding: "8px 12px"
                 }}
               />
             </div>
@@ -45,7 +47,9 @@ const SignupForm: React.FC<SignupFormProps> = ({ isDarkBackground = false }) => 
                 color: "rgb(255, 255, 255)", 
                 backgroundColor: "rgb(26, 31, 44)", 
                 borderRadius: "4px", 
-                fontWeight: 700 
+                fontWeight: 700,
+                padding: "8px 12px",
+                whiteSpace: "nowrap"
               }}
             >
               <div className="formkit-spinner">

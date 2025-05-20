@@ -48,15 +48,15 @@ const HomeVariation = () => {
             
             {/* Right column: Book cover + Sign-up box */}
             <div className="flex flex-col space-y-8">
-              {/* Book cover at the top */}
+              {/* Book cover at the top with increased width */}
               <div className="flex justify-center">
-                <div className="w-full max-w-[250px]">
+                <div className="w-full max-w-[320px]">
                   <EbookCover />
                 </div>
               </div>
               
-              {/* Sign-up box below the book */}
-              <div className="bg-white p-6 rounded-lg shadow-md">
+              {/* Sign-up box below the book with matching width */}
+              <div className="bg-white p-6 rounded-lg shadow-md w-full max-w-[320px] mx-auto">
                 <h3 className="text-xl font-bold text-center mb-4">Get Your Free eBook</h3>
                 <SignupForm isDarkBackground={false} />
                 <p className="text-center text-sm text-gray-500 mt-3">We respect your email privacy. Unsubscribe anytime.</p>

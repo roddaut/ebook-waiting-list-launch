@@ -1,4 +1,3 @@
-
 import React from 'react';
 import EbookCover from '../components/EbookCover';
 import SignupForm from '../components/SignupForm';
@@ -20,9 +19,9 @@ const HomeVariation = () => {
             </p>
           </div>
           
-          {/* Two-column layout: Text on left, Book+Signup on right */}
+          {/* Two-column layout: Text+Signup on left, Book on right */}
           <div className="grid md:grid-cols-2 gap-8 items-start">
-            {/* Left column: Main text (previously in middle column) */}
+            {/* Left column: Main text and signup form */}
             <div>
               <p className="text-lg text-gray-800 mb-4">
                 You're tired of posting into the void.
@@ -41,25 +40,22 @@ const HomeVariation = () => {
               </p>
               
               {/* Small link to toggle between versions */}
-              <div className="mt-8 text-sm text-gray-500">
+              <div className="mb-8 text-sm text-gray-500">
                 <Link to="/" className="hover:underline">View original layout</Link>
               </div>
-            </div>
-            
-            {/* Right column: Book cover + Sign-up box */}
-            <div className="flex flex-col space-y-8">
-              {/* Book cover at the top with increased width */}
-              <div className="flex justify-center">
-                <div className="w-full max-w-[320px]">
-                  <EbookCover />
-                </div>
-              </div>
-              
-              {/* Sign-up box below the book with matching width */}
-              <div className="bg-white p-6 rounded-lg shadow-md w-full max-w-[320px] mx-auto">
+
+              {/* Sign-up box moved to left column, below text */}
+              <div className="bg-white p-6 rounded-lg shadow-md w-full max-w-[90%] mt-8">
                 <h3 className="text-xl font-bold text-center mb-4">Get Your Free eBook</h3>
                 <SignupForm isDarkBackground={false} />
                 <p className="text-center text-sm text-gray-500 mt-3">We respect your email privacy. Unsubscribe anytime.</p>
+              </div>
+            </div>
+            
+            {/* Right column: Book cover only */}
+            <div className="flex justify-center items-center">
+              <div className="w-full max-w-[380px]">
+                <EbookCover />
               </div>
             </div>
           </div>

@@ -12,7 +12,6 @@ import WaitingList from "./pages/WaitingList";
 import NotFound from "./pages/NotFound";
 import Confirmation from "./pages/Confirmation";
 import Download from "./pages/Download";
-import GoogleAnalytics from "./components/GoogleAnalytics";
 
 const queryClient = new QueryClient();
 
@@ -22,7 +21,6 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
-        <GoogleAnalytics />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/home-v2" element={<HomeVariation />} />

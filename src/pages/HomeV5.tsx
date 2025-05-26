@@ -1,4 +1,3 @@
-
 import React from 'react';
 import EbookCover from '../components/EbookCover';
 import SignupForm from '../components/SignupForm';
@@ -8,7 +7,7 @@ import { Link } from 'react-router-dom';
 const HomeV5 = () => {
   return (
     <div className="min-h-screen flex flex-col">
-      {/* Hero Section with three-column layout */}
+      {/* Hero Section with two-column layout */}
       <section className="hero-gradient py-12 md:py-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-8">
@@ -20,10 +19,10 @@ const HomeV5 = () => {
             </p>
           </div>
           
-          {/* Three-column layout: Text, Signup Form, Book Cover */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
-            {/* Left column: Main text content (spans 2 columns on larger screens) */}
-            <div className="md:col-span-2">
+          {/* Two-column layout: Text content, Signup Form + Book Cover */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+            {/* Left column: Main text content */}
+            <div>
               <p className="text-lg text-gray-800 mb-4">
                 You're tired of posting into the void.
               </p>
@@ -45,7 +44,7 @@ const HomeV5 = () => {
                 <Link to="/home-v4" className="hover:underline">View previous layout</Link>
               </div>
               
-              {/* Signup form positioned under text on mobile, separate column on desktop */}
+              {/* Signup form positioned under text on mobile */}
               <div className="md:hidden bg-white p-6 rounded-lg shadow-md">
                 <h3 className="text-xl font-bold text-center mb-4">Get Your Free eBook</h3>
                 <SignupForm isDarkBackground={false} verticalLayout={true} />
@@ -53,19 +52,18 @@ const HomeV5 = () => {
               </div>
             </div>
             
-            {/* Right column: Book cover positioned on far right */}
-            <div className="order-last md:order-none flex justify-center md:justify-end">
-              <div className="w-full max-w-[250px]">
-                <EbookCover />
-              </div>
-            </div>
-            
-            {/* Middle column: Sign-up form (hidden on mobile, shown on desktop) */}
-            <div className="hidden md:block md:col-span-2 md:col-start-1 md:row-start-2 mt-8">
-              <div className="bg-white p-6 rounded-lg shadow-md max-w-[350px]">
+            {/* Right column: Signup form and book cover side by side */}
+            <div className="hidden md:flex gap-6 items-start">
+              {/* Signup form on the left side of right column */}
+              <div className="bg-white p-6 rounded-lg shadow-md flex-shrink-0" style={{ minWidth: '300px' }}>
                 <h3 className="text-xl font-bold text-center mb-4">Get Your Free eBook</h3>
                 <SignupForm isDarkBackground={false} verticalLayout={true} />
                 <p className="text-center text-sm text-gray-500 mt-3">We respect your email privacy. Unsubscribe anytime.</p>
+              </div>
+              
+              {/* Book cover on the right side of right column */}
+              <div className="w-full max-w-[250px] flex-shrink-0">
+                <EbookCover />
               </div>
             </div>
           </div>

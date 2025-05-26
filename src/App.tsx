@@ -1,3 +1,4 @@
+
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -8,6 +9,7 @@ import HomeVariation from "./pages/HomeVariation";
 import HomeV3 from "./pages/HomeV3";
 import HomeV4 from "./pages/HomeV4";
 import HomeV5 from "./pages/HomeV5";
+import HomeV6 from "./pages/HomeV6";
 import WaitingList from "./pages/WaitingList";
 import NotFound from "./pages/NotFound";
 import Confirmation from "./pages/Confirmation";
@@ -27,6 +29,7 @@ const App = () => (
           <Route path="/home-v3" element={<HomeV3 />} />
           <Route path="/home-v4" element={<HomeV4 />} />
           <Route path="/home-v5" element={<HomeV5 />} />
+          <Route path="/home-v6" element={<HomeV6 />} />
           <Route path="/waiting-list" element={<WaitingList />} />
           <Route path="/confirmation" element={<Confirmation />} />
           <Route path="/download" element={<Download />} />

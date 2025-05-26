@@ -1,3 +1,4 @@
+
 import React from 'react';
 import EbookCover from '../components/EbookCover';
 import SignupForm from '../components/SignupForm';
@@ -51,23 +52,29 @@ const HomeV6 = () => {
               <h3 className="text-xl font-bold text-gray-800 mb-4">For example, you'll discover:</h3>
               
               <ul className="space-y-3 mb-6">
-                <li className="text-lg text-gray-800">
-                  <strong>Kristina God</strong> - How the content triangle transforms one idea into multiple engagement formats
+                <li className="text-lg text-gray-800 flex items-start gap-2">
+                  <span className="text-blue-500 mt-1">•</span>
+                  <span><strong>Kristina God</strong> - How the content triangle transforms one idea into multiple engagement formats</span>
                 </li>
-                <li className="text-lg text-gray-800">
-                  <strong>Niharikaa Sodhi</strong> - The outlining hack that eliminates writer's block
+                <li className="text-lg text-gray-800 flex items-start gap-2">
+                  <span className="text-blue-500 mt-1">•</span>
+                  <span><strong>Niharikaa Sodhi</strong> - The outlining hack that eliminates writer's block</span>
                 </li>
-                <li className="text-lg text-gray-800">
-                  <strong>Tom Kueglar</strong> - How to get AI to give you instant feedback to improve your writing
+                <li className="text-lg text-gray-800 flex items-start gap-2">
+                  <span className="text-blue-500 mt-1">•</span>
+                  <span><strong>Tom Kueglar</strong> - How to get AI to give you instant feedback to improve your writing</span>
                 </li>
-                <li className="text-lg text-gray-800">
-                  <strong>Josh Spector</strong> - The inbox mining technique that reveals endless content opportunities
+                <li className="text-lg text-gray-800 flex items-start gap-2">
+                  <span className="text-blue-500 mt-1">•</span>
+                  <span><strong>Josh Spector</strong> - The inbox mining technique that reveals endless content opportunities</span>
                 </li>
-                <li className="text-lg text-gray-800">
-                  <strong>Ana Calin</strong> - How to overcome the "trust recession" with this counterintuitive posting approach
+                <li className="text-lg text-gray-800 flex items-start gap-2">
+                  <span className="text-blue-500 mt-1">•</span>
+                  <span><strong>Ana Calin</strong> - How to overcome the "trust recession" with this counterintuitive posting approach</span>
                 </li>
-                <li className="text-lg text-gray-800">
-                  <strong>Michael Simmons</strong> - The 7 categories that all viral ideas fall into (and how to use them)
+                <li className="text-lg text-gray-800 flex items-start gap-2">
+                  <span className="text-blue-500 mt-1">•</span>
+                  <span><strong>Michael Simmons</strong> - The 7 categories that all viral ideas fall into (and how to use them)</span>
                 </li>
               </ul>
               

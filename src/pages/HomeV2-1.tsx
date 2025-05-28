@@ -4,7 +4,7 @@ import SignupForm from '../components/SignupForm';
 import { CheckIcon } from "lucide-react";
 import { Link } from 'react-router-dom';
 
-const HomeVariation = () => {
+const HomeV21 = () => {
   return (
     <div className="min-h-screen flex flex-col">
       {/* Hero Section */}
@@ -12,10 +12,10 @@ const HomeVariation = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-8">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-black tracking-tight text-black-ebook mb-4 mx-auto max-w-5xl">
-              Why most online entrepreneurs struggle—and what these 20 did differently
+              They Turned Content Into Income. So Can You.
             </h1>
             <p className="text-xl text-gray-800 max-w-2xl mx-auto">
-              Stop guessing how to grow online. Discover how real creators turned their words into wealth—with practical strategies you can copy today.
+              Inside this free ebook, real coaches and creators share how they grew their audience and their income—one piece of content at a time.
             </p>
           </div>
           
@@ -24,25 +24,19 @@ const HomeVariation = () => {
             {/* Left column: Book cover and main text */}
             <div>
               <p className="text-lg text-gray-800 mb-4">
-                You're tired of posting into the void.
+                Don't waste time with generic advice.
               </p>
               <p className="text-lg text-gray-800 mb-4">
-                You're a writer, coach, or professional who knows your words can create income—but you're stuck spinning your wheels, drowning in vague advice and hollow growth hacks.
+                This free ebook gives you real-world strategies from creators using content to build income online—right now.
               </p>
               <p className="text-lg text-gray-800 mb-4">
-                This free ebook changes that.
-              </p>
-              <p className="text-lg text-gray-800 mb-4">
-                Inside Profitable Playbooks, Rodney Daut curates strategies from 20+ successful online creators who turned their skills into scalable income—without selling out or selling fluff.
-              </p>
-              <p className="text-lg text-gray-800 mb-4">
-                You'll discover the exact systems, workflows, and mindset shifts that helped them grow newsletters, launch products, sell courses, land high-ticket clients, and build communities from scratch.
+                Each chapter is a 10-minute mini-masterclass packed with practical insights from coaches, consultants, and creators who turn content into clients and followers into freedom.
               </p>
               
               {/* Small links to toggle between versions */}
               <div className="mt-8 text-center text-sm text-gray-500">
-                <Link to="/" className="hover:underline">View original layout</Link>
-                <Link to="/home-v2-1" className="hover:underline ml-4">Try variation 2-1</Link>
+                <Link to="/home-v2" className="hover:underline">Back to version 2</Link>
+                <Link to="/" className="hover:underline ml-4">View original layout</Link>
                 <Link to="/home-v3" className="hover:underline ml-4">Try variation 3 layout</Link>
                 <Link to="/home-v4" className="hover:underline ml-4">Try variation 4 layout</Link>
               </div>
@@ -179,4 +173,4 @@ const HomeVariation = () => {
   );
 };
 
-export default HomeVariation;
+export default HomeV21;

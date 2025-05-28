@@ -6,6 +6,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import HomeVariation from "./pages/HomeVariation";
+import HomeV21 from "./pages/HomeV2-1";
 import HomeV3 from "./pages/HomeV3";
 import HomeV4 from "./pages/HomeV4";
 import HomeV5 from "./pages/HomeV5";
@@ -27,6 +28,7 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/home-v2" element={<HomeVariation />} />
+          <Route path="/home-v2-1" element={<HomeV21 />} />
           <Route path="/home-v3" element={<HomeV3 />} />
           <Route path="/home-v4" element={<HomeV4 />} />
           <Route path="/home-v5" element={<HomeV5 />} />

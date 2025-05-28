@@ -33,6 +33,31 @@ const HomeV21 = () => {
                 Each chapter is a 10-minute mini-masterclass packed with practical insights from coaches, consultants, and creators who turn content into clients and followers into freedom.
               </p>
               
+              {/* New "For example" section */}
+              <div className="mb-6">
+                <p className="text-lg text-gray-800 mb-3 font-medium">
+                  For example, you'll discover:
+                </p>
+                <ul className="space-y-2">
+                  <li className="text-gray-700 flex items-start gap-2">
+                    <span className="text-blue-600 font-bold">•</span>
+                    <span><strong>Kristina God</strong> - How the content triangle transforms one idea into multiple engagement formats</span>
+                  </li>
+                  <li className="text-gray-700 flex items-start gap-2">
+                    <span className="text-blue-600 font-bold">•</span>
+                    <span><strong>Niharikaa Sodhi</strong> - The outlining hack that eliminates writer's block</span>
+                  </li>
+                  <li className="text-gray-700 flex items-start gap-2">
+                    <span className="text-blue-600 font-bold">•</span>
+                    <span><strong>Tom Kueglar</strong> - How to get AI to give you instant feedback to improve your writing</span>
+                  </li>
+                  <li className="text-gray-700 flex items-start gap-2">
+                    <span className="text-blue-600 font-bold">•</span>
+                    <span><strong>Josh Spector</strong> - The inbox mining technique that reveals endless content opportunities</span>
+                  </li>
+                </ul>
+              </div>
+              
               {/* Small links to toggle between versions */}
               <div className="mt-8 text-center text-sm text-gray-500">
                 <Link to="/home-v2" className="hover:underline">Back to version 2</Link>

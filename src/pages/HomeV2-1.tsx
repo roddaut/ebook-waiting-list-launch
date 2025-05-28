@@ -56,14 +56,10 @@ const HomeV21 = () => {
                     <span><strong>Josh Spector</strong> - The inbox mining technique that reveals endless content opportunities</span>
                   </li>
                 </ul>
-              </div>
-              
-              {/* Small links to toggle between versions */}
-              <div className="mt-8 text-center text-sm text-gray-500">
-                <Link to="/home-v2" className="hover:underline">Back to version 2</Link>
-                <Link to="/" className="hover:underline ml-4">View original layout</Link>
-                <Link to="/home-v3" className="hover:underline ml-4">Try variation 3 layout</Link>
-                <Link to="/home-v4" className="hover:underline ml-4">Try variation 4 layout</Link>
+                
+                <p className="text-lg text-gray-800 mt-4">
+                  And even more described below ...
+                </p>
               </div>
 
               {/* Sign-up box moved to left column, below text */}

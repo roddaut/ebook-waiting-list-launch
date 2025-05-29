@@ -4,11 +4,20 @@ import React, { useState } from 'react';
 const EbookCover: React.FC = () => {
   const [imageError, setImageError] = useState(false);
   
-  // Main ebook cover image (uploaded by user)
-  const mainImage = "/lovable-uploads/23038b7f-2cba-41df-9efc-6935e8d6d881.png";
+  // Main ebook cover image (uploaded by user) - UPDATED TO CURRENT UPLOAD
+  const mainImage = "/lovable-uploads/85ff609d-dcef-4bb4-bc69-d68e55489233.png";
   
   // Fallback image from Unsplash if the main image fails to load
   const fallbackImage = "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b";
+  
+  const handleImageError = () => {
+    console.log("Main image failed to load:", mainImage);
+    setImageError(true);
+  };
+
+  const handleImageLoad = () => {
+    console.log("Image loaded successfully:", mainImage);
+  };
   
   return (
     <div className="flex justify-center w-full">
@@ -19,7 +28,8 @@ const EbookCover: React.FC = () => {
             src={imageError ? fallbackImage : mainImage} 
             alt="Profitable Playbooks for Writers eBook Cover" 
             className="w-full h-auto rounded-lg"
-            onError={() => setImageError(true)}
+            onError={handleImageError}
+            onLoad={handleImageLoad}
           />
         </div>
       </div>

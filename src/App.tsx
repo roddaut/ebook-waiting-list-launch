@@ -5,6 +5,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
+import HomeV1 from "./pages/HomeV1";
 import HomeVariation from "./pages/HomeVariation";
 import HomeV21 from "./pages/HomeV2-1";
 import HomeV3 from "./pages/HomeV3";
@@ -27,6 +28,7 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/home-v1" element={<HomeV1 />} />
           <Route path="/home-v2" element={<HomeVariation />} />
           <Route path="/home-v2-1" element={<HomeV21 />} />
           <Route path="/home-v3" element={<HomeV3 />} />

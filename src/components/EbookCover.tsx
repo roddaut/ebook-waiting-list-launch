@@ -5,7 +5,7 @@ const EbookCover: React.FC = () => {
   const [imageError, setImageError] = useState(false);
   
   // Main ebook cover image (uploaded by user)
-  const mainImage = "/lovable-uploads/92871579-114e-4f5c-a37f-2ed5b2deb1ac.png";
+  const mainImage = "/lovable-uploads/9b95a38d-589a-4889-b8da-826763863732.png";
   
   // Fallback image from Unsplash if the main image fails to load
   const fallbackImage = "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b";

@@ -18,14 +18,14 @@ const Download = () => {
           
           <h1 className="text-2xl font-bold mb-6">Here's your ebook</h1>
           
-          {/* Download button - moved to top for mobile visibility */}
-          <div className="mb-8">
+          {/* Mobile Download button - visible only on small screens */}
+          <div className="mb-8 block sm:hidden">
             <a 
               href="https://profplaybooks.s3.amazonaws.com/ProfitablePlaybooks.pdf" 
               download="Profitable_Playbooks.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-4 px-8 rounded-lg transition-colors duration-300 text-lg w-full sm:w-auto"
+              className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-4 px-8 rounded-lg transition-colors duration-300 text-lg w-full"
             >
               Download Ebook
             </a>
@@ -55,6 +55,19 @@ const Download = () => {
             <p className="text-md">
               Rodney Daut
             </p>
+            
+            {/* Desktop Download button - visible only on sm screens and above */}
+            <div className="pt-6 hidden sm:block">
+              <a 
+                href="https://profplaybooks.s3.amazonaws.com/ProfitablePlaybooks.pdf" 
+                download="Profitable_Playbooks.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-4 px-8 rounded-lg transition-colors duration-300 text-lg"
+              >
+                Download Ebook
+              </a>
+            </div>
             
             {/* Ebook cover - kept at bottom */}
             <div className="pt-8">

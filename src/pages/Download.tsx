@@ -45,7 +45,13 @@ const Download = () => {
             
             {/* Download button */}
             <div className="pt-6">
-              <a href="/lovable-uploads/9b95a38d-589a-4889-b8da-826763863732.png" download="Profitable_Playbooks.pdf" className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-300">
+              <a 
+                href="https://profplaybooks.s3.amazonaws.com/ProfitablePlaybooks.pdf" 
+                download="Profitable_Playbooks.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-300"
+              >
                 Download Ebook
               </a>
             </div>

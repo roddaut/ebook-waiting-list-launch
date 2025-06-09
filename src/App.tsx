@@ -17,9 +17,31 @@ import WaitingList from "./pages/WaitingList";
 import NotFound from "./pages/NotFound";
 import Confirmation from "./pages/Confirmation";
 import Download from "./pages/Download";
-import ExpertMattGiaroHome from "./pages/ExpertMattGiaroHome";
-import ExpertTomKueglerHome from "./pages/ExpertTomKueglerHome";
-import ExpertSinemGunelHome from "./pages/ExpertSinemGunelHome";
+
+// Expert pages
+import MattGiaro from "./pages/experts/MattGiaro";
+import TomKuegler from "./pages/experts/TomKuegler";
+import SinemGunel from "./pages/experts/SinemGunel";
+import DavidMcIlroy from "./pages/experts/DavidMcIlroy";
+import MarkWils from "./pages/experts/MarkWils";
+import NiharikaaSodhi from "./pages/experts/NiharikaaSodhi";
+import EvChapman from "./pages/experts/EvChapman";
+import ChrisStanley from "./pages/experts/ChrisStanley";
+import RodneyDaut from "./pages/experts/RodneyDaut";
+import JariRoomer from "./pages/experts/JariRoomer";
+import KarenCherry from "./pages/experts/KarenCherry";
+import LandonPoburan from "./pages/experts/LandonPoburan";
+import LeoQuinn from "./pages/experts/LeoQuinn";
+import RussellNohelty from "./pages/experts/RussellNohelty";
+import AnaCalin from "./pages/experts/AnaCalin";
+import KevonCheung from "./pages/experts/KevonCheung";
+import PhilipHofmacher from "./pages/experts/PhilipHofmacher";
+import IanBotes from "./pages/experts/IanBotes";
+import ClaudiaFaith from "./pages/experts/ClaudiaFaith";
+import JoshSpector from "./pages/experts/JoshSpector";
+import KristinaGod from "./pages/experts/KristinaGod";
+import MichaelSimmons from "./pages/experts/MichaelSimmons";
+import RobertPlank from "./pages/experts/RobertPlank";
 
 const queryClient = new QueryClient();
 
@@ -42,9 +64,32 @@ const App = () => (
           <Route path="/waiting-list" element={<WaitingList />} />
           <Route path="/confirmation" element={<Confirmation />} />
           <Route path="/download" element={<Download />} />
-          <Route path="/expert-matt-giaro-home" element={<ExpertMattGiaroHome />} />
-          <Route path="/expert-tom-kuegler-home" element={<ExpertTomKueglerHome />} />
-          <Route path="/expert-sinem-gunel-home" element={<ExpertSinemGunelHome />} />
+          
+          {/* Expert pages with new routing structure */}
+          <Route path="/experts/matt-giaro" element={<MattGiaro />} />
+          <Route path="/experts/tom-kuegler" element={<TomKuegler />} />
+          <Route path="/experts/sinem-gunel" element={<SinemGunel />} />
+          <Route path="/experts/david-mcilroy" element={<DavidMcIlroy />} />
+          <Route path="/experts/mark-wils" element={<MarkWils />} />
+          <Route path="/experts/niharikaa-sodhi" element={<NiharikaaSodhi />} />
+          <Route path="/experts/ev-chapman" element={<EvChapman />} />
+          <Route path="/experts/chris-stanley" element={<ChrisStanley />} />
+          <Route path="/experts/rodney-daut" element={<RodneyDaut />} />
+          <Route path="/experts/jari-roomer" element={<JariRoomer />} />
+          <Route path="/experts/karen-cherry" element={<KarenCherry />} />
+          <Route path="/experts/landon-poburan" element={<LandonPoburan />} />
+          <Route path="/experts/leo-quinn" element={<LeoQuinn />} />
+          <Route path="/experts/russell-nohelty" element={<RussellNohelty />} />
+          <Route path="/experts/ana-calin" element={<AnaCalin />} />
+          <Route path="/experts/kevon-cheung" element={<KevonCheung />} />
+          <Route path="/experts/philip-hofmacher" element={<PhilipHofmacher />} />
+          <Route path="/experts/ian-botes" element={<IanBotes />} />
+          <Route path="/experts/claudia-faith" element={<ClaudiaFaith />} />
+          <Route path="/experts/josh-spector" element={<JoshSpector />} />
+          <Route path="/experts/kristina-god" element={<KristinaGod />} />
+          <Route path="/experts/michael-simmons" element={<MichaelSimmons />} />
+          <Route path="/experts/robert-plank" element={<RobertPlank />} />
+          
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

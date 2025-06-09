@@ -37,13 +37,6 @@ const ExpertHeroSection: React.FC<ExpertHeroSectionProps> = ({ expert }) => {
             
             {/* Expert-specific section */}
             <div className="mb-6">
-              {/* Expert photo placeholder */}
-              <div className="mb-4 flex justify-center">
-                <div className="w-20 h-20 bg-gray-300 rounded-full flex items-center justify-center">
-                  <span className="text-gray-600 text-sm">Photo</span>
-                </div>
-              </div>
-              
               <p className="text-lg text-gray-800 mb-3 font-medium">
                 Featuring insights from {expert.name}:
               </p>

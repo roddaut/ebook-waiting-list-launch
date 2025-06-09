@@ -17,9 +17,9 @@ import WaitingList from "./pages/WaitingList";
 import NotFound from "./pages/NotFound";
 import Confirmation from "./pages/Confirmation";
 import Download from "./pages/Download";
-import ExpertMattGiaro from "./pages/ExpertMattGiaro";
-import ExpertTomKuegler from "./pages/ExpertTomKuegler";
-import ExpertSinemGunel from "./pages/ExpertSinemGunel";
+import ExpertMattGiaroHome from "./pages/ExpertMattGiaroHome";
+import ExpertTomKueglerHome from "./pages/ExpertTomKueglerHome";
+import ExpertSinemGunelHome from "./pages/ExpertSinemGunelHome";
 
 const queryClient = new QueryClient();
 
@@ -42,9 +42,9 @@ const App = () => (
           <Route path="/waiting-list" element={<WaitingList />} />
           <Route path="/confirmation" element={<Confirmation />} />
           <Route path="/download" element={<Download />} />
-          <Route path="/expert/matt-giaro" element={<ExpertMattGiaro />} />
-          <Route path="/expert/tom-kuegler" element={<ExpertTomKuegler />} />
-          <Route path="/expert/sinem-gunel" element={<ExpertSinemGunel />} />
+          <Route path="/expert-matt-giaro-home" element={<ExpertMattGiaroHome />} />
+          <Route path="/expert-tom-kuegler-home" element={<ExpertTomKueglerHome />} />
+          <Route path="/expert-sinem-gunel-home" element={<ExpertSinemGunelHome />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

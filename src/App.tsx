@@ -3,7 +3,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Home from "./pages/Home";
 import HomeV1 from "./pages/HomeV1";
 import HomeVariation from "./pages/HomeVariation";
@@ -68,6 +68,8 @@ const App = () => (
           {/* Expert pages with new routing structure */}
           <Route path="/experts/matt-giaro" element={<MattGiaro />} />
           <Route path="/experts/tom-kuegler" element={<TomKuegler />} />
+          {/* Redirect for alternate spelling */}
+          <Route path="/experts/tom-kueglar" element={<Navigate to="/experts/tom-kuegler" replace />} />
           <Route path="/experts/sinem-gunel" element={<SinemGunel />} />
           <Route path="/experts/david-mcilroy" element={<DavidMcIlroy />} />
           <Route path="/experts/mark-wils" element={<MarkWils />} />

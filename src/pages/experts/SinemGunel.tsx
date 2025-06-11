@@ -6,7 +6,7 @@ import { ExpertHomeData } from '@/types/expertHome';
 const SinemGunel = () => {
   const expertData: ExpertHomeData = {
     name: 'Sinem Günel',
-    photo: '',
+    photo: '/lovable-uploads/8a277013-7588-484e-8b8e-e43d87927bde.png',
     bullets: [
       'The counterintuitive pricing strategy that removes sales anxiety while maximizing revenue',
       'The unexpected customer journey that leads to the highest coaching conversions',

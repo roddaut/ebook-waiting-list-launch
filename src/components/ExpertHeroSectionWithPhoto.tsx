@@ -1,4 +1,3 @@
-
 import React from 'react';
 import EbookCover from './EbookCover';
 import SignupForm from './SignupForm';
@@ -35,15 +34,15 @@ const ExpertHeroSectionWithPhoto: React.FC<ExpertHeroSectionWithPhotoProps> = ({
               Each chapter is a 10-minute mini-masterclass packed with practical insights from coaches, consultants, and creators who turn content into clients and followers into freedom.
             </p>
             
-            {/* Expert-specific section with photo positioned to the right of bullets */}
+            {/* Expert-specific section with photo positioned to the left of bullets */}
             <div className="mb-6">
               <p className="text-lg text-gray-800 mb-3 font-medium">
                 Featuring insights from {expert.name}:
               </p>
               
-              <div className="relative">
+              <div className="flex items-start gap-3">
                 {expert.photo && (
-                  <div className="float-right ml-4 mb-2">
+                  <div className="flex-shrink-0">
                     <img 
                       src={expert.photo} 
                       alt={expert.name}
@@ -52,7 +51,7 @@ const ExpertHeroSectionWithPhoto: React.FC<ExpertHeroSectionWithPhotoProps> = ({
                   </div>
                 )}
                 
-                <ul className="space-y-2">
+                <ul className="space-y-2 flex-1">
                   {expert.bullets.map((bullet, index) => (
                     <li key={index} className="text-gray-700 flex items-start gap-2">
                       <span className="text-blue-600 font-bold">•</span>
@@ -60,8 +59,6 @@ const ExpertHeroSectionWithPhoto: React.FC<ExpertHeroSectionWithPhotoProps> = ({
                     </li>
                   ))}
                 </ul>
-                
-                <div className="clear-both"></div>
               </div>
               
               <p className="text-lg text-gray-800 mt-4">

@@ -1,3 +1,4 @@
+
 import React from 'react';
 import EbookCover from './EbookCover';
 import SignupForm from './SignupForm';
@@ -42,11 +43,15 @@ const ExpertHeroSectionWithPhoto: React.FC<ExpertHeroSectionWithPhotoProps> = ({
               
               <div className="flex items-start gap-3">
                 {expert.photo && (
-                  <div className="flex-shrink-0">
+                  <div className="flex-shrink-0 overflow-hidden rounded-full">
                     <img 
                       src={expert.photo} 
                       alt={expert.name}
                       className="w-20 h-20 rounded-full object-cover border-2 border-gray-200"
+                      style={{
+                        objectPosition: 'center 20%',
+                        transform: 'scale(1.3)'
+                      }}
                     />
                   </div>
                 )}

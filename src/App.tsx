@@ -1,4 +1,3 @@
-
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -42,6 +41,7 @@ import JoshSpector from "./pages/experts/JoshSpector";
 import KristinaGod from "./pages/experts/KristinaGod";
 import MichaelSimmons from "./pages/experts/MichaelSimmons";
 import RobertPlank from "./pages/experts/RobertPlank";
+import TemplateExpert from "./pages/experts/TemplateExpert";
 
 const queryClient = new QueryClient();
 
@@ -66,6 +66,7 @@ const App = () => (
           <Route path="/download" element={<Download />} />
           
           {/* Expert pages with new routing structure */}
+          <Route path="/experts/template" element={<TemplateExpert />} />
           <Route path="/experts/matt-giaro" element={<MattGiaro />} />
           <Route path="/experts/tom-kuegler" element={<TomKuegler />} />
           {/* Redirect for alternate spelling */}

@@ -1,6 +1,11 @@
 
 import React from 'react';
-import ExpertHomePage from '@/components/ExpertHomePage';
+import ExpertHeroSectionWithPhoto from '@/components/ExpertHeroSectionWithPhoto';
+import WhatYoullLearnSection from '@/components/WhatYoullLearnSection';
+import SignupSection from '@/components/SignupSection';
+import WhatMakesDifferentSection from '@/components/WhatMakesDifferentSection';
+import FinalCtaSection from '@/components/FinalCtaSection';
+import Footer from '@/components/Footer';
 import { ExpertHomeData } from '@/types/expertHome';
 
 const KarenCherry = () => {
@@ -14,7 +19,16 @@ const KarenCherry = () => {
     ]
   };
 
-  return <ExpertHomePage expert={expertData} />;
+  return (
+    <div className="min-h-screen flex flex-col">
+      <ExpertHeroSectionWithPhoto expert={expertData} />
+      <WhatYoullLearnSection />
+      <SignupSection />
+      <WhatMakesDifferentSection />
+      <FinalCtaSection />
+      <Footer />
+    </div>
+  );
 };
 
 export default KarenCherry;

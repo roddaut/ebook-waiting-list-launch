@@ -35,16 +35,15 @@ const ExpertHeroSectionWithPhoto: React.FC<ExpertHeroSectionWithPhotoProps> = ({
               Each chapter is a 10-minute mini-masterclass packed with practical insights from coaches, consultants, and creators who turn content into clients and followers into freedom.
             </p>
             
-            {/* Expert-specific section with photo */}
+            {/* Expert-specific section with photo positioned to the right of bullets */}
             <div className="mb-6">
-              <div className="flex items-start gap-4 mb-3">
-                <div className="flex-1">
-                  <p className="text-lg text-gray-800 font-medium">
-                    Featuring insights from {expert.name}:
-                  </p>
-                </div>
+              <p className="text-lg text-gray-800 mb-3 font-medium">
+                Featuring insights from {expert.name}:
+              </p>
+              
+              <div className="relative">
                 {expert.photo && (
-                  <div className="flex-shrink-0">
+                  <div className="float-right ml-4 mb-2">
                     <img 
                       src={expert.photo} 
                       alt={expert.name}
@@ -52,16 +51,18 @@ const ExpertHeroSectionWithPhoto: React.FC<ExpertHeroSectionWithPhotoProps> = ({
                     />
                   </div>
                 )}
+                
+                <ul className="space-y-2">
+                  {expert.bullets.map((bullet, index) => (
+                    <li key={index} className="text-gray-700 flex items-start gap-2">
+                      <span className="text-blue-600 font-bold">•</span>
+                      <span>{bullet}</span>
+                    </li>
+                  ))}
+                </ul>
+                
+                <div className="clear-both"></div>
               </div>
-              
-              <ul className="space-y-2">
-                {expert.bullets.map((bullet, index) => (
-                  <li key={index} className="text-gray-700 flex items-start gap-2">
-                    <span className="text-blue-600 font-bold">•</span>
-                    <span>{bullet}</span>
-                  </li>
-                ))}
-              </ul>
               
               <p className="text-lg text-gray-800 mt-4">
                 And more from other creators described below ...

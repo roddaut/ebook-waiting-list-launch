@@ -47,7 +47,7 @@ const ExpertHeroSectionWithPhoto: React.FC<ExpertHeroSectionWithPhotoProps> = ({
                     <img 
                       src={expert.photo} 
                       alt={expert.name}
-                      className="w-20 h-20 rounded-full object-cover border-2 border-gray-200"
+                      className="w-24 h-24 rounded-full object-cover border-2 border-gray-200"
                       style={{
                         objectPosition: 'center 20%',
                         transform: 'scale(1.3)'

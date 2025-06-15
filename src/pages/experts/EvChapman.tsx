@@ -11,7 +11,7 @@ import { ExpertHomeData } from '@/types/expertHome';
 const EvChapman = () => {
   const expertData: ExpertHomeData = {
     name: 'Ev Chapman',
-    photo: '',
+    photo: '/lovable-uploads/011c4c60-4190-42f7-bce1-2ed2776d4381.png',
     bullets: [
       'Why your keyboard might be holding back your best ideas',
       'The surprising way AI transforms your writing process without taking over your voice',

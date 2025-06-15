@@ -11,7 +11,7 @@ import { ExpertHomeData } from '@/types/expertHome';
 const IanBotes = () => {
   const expertData: ExpertHomeData = {
     name: 'Ian Botes',
-    photo: '',
+    photo: '/lovable-uploads/80ff04b6-4213-4df1-8188-2d15e3e75ac5.png',
     bullets: [
       'The writing approach that sells your worldview rather than just your product',
       'The counterintuitive reason longer content sometimes converts better than short-form',

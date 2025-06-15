@@ -11,7 +11,7 @@ import { ExpertHomeData } from '@/types/expertHome';
 const DavidMcIlroy = () => {
   const expertData: ExpertHomeData = {
     name: 'David McIlroy',
-    photo: '',
+    photo: '/lovable-uploads/dc1cc9c5-9476-4222-8dc7-5894034df020.png',
     bullets: [
       'The counterintuitive way to know which ideas are worth sharing with your audience',
       'Why "showing the shadow" might be the missing ingredient in your content strategy',

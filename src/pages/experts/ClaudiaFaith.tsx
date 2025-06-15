@@ -11,7 +11,7 @@ import { ExpertHomeData } from '@/types/expertHome';
 const ClaudiaFaith = () => {
   const expertData: ExpertHomeData = {
     name: 'Claudia Faith',
-    photo: '',
+    photo: '/lovable-uploads/8080e837-cb39-4743-ab90-178ce343d7d3.png',
     bullets: [
       'The counterintuitive communication method that dramatically increases audience interaction',
       'The surprising way investor emails launched her successful writing career',
